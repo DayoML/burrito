@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-burritoamp33-dev-150132-authRole",
+      "UnauthRoleArn": "arn:aws:iam::304127951949:role/amplify-burritoamp33-dev-150132-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::304127951949:role/amplify-burritoamp33-dev-150132-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-burritoamp33-dev-150132-deployment",
+      "UnauthRoleName": "amplify-burritoamp33-dev-150132-unauthRole",
+      "StackName": "amplify-burritoamp33-dev-150132",
+      "StackId": "arn:aws:cloudformation:us-west-2:304127951949:stack/amplify-burritoamp33-dev-150132/1e2debf0-baac-11ec-ad79-06ac02b4426d",
+      "AmplifyAppId": "d2sey35p3kzhmj"
+    },
+    "categories": {
+      "auth": {
+        "burritoamp33c786052b": {}
+      }
+    }
+  }
+}
