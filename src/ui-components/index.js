@@ -4,6 +4,7 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
+export { default as BurritoChannelListingCardImgNoCollection } from "./BurritoChannelListingCardImgNoCollection";
 export { default as BurritoShowListingsCard } from "./BurritoShowListingsCard";
 export { default as BurritoShowCreate } from "./BurritoShowCreate";
 export { default as BurritoChannelCreate } from "./BurritoChannelCreate";
