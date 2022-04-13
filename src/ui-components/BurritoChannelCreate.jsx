@@ -7,7 +7,8 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, TextField, View } from "@aws-amplify/ui-react";
+import { Flex, TextField, View, Button,Image } from "@aws-amplify/ui-react";
+
 export default function BurritoChannelCreate(props) {
   const { overrides, ...rest } = props;
   return (
@@ -138,7 +139,9 @@ export default function BurritoChannelCreate(props) {
           variation="default"
           {...getOverrideProps(overrides, "ChannelStreamLink")}
         ></TextField>
+        <Button onClick={() => alert('Channel successfully created')}>Create</Button>
       </Flex>
+      
     </View>
   );
 }

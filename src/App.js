@@ -15,9 +15,9 @@ export default function App() {
       {({ signOut, user }) => (
         <main>
           
-          <h2>Rocket</h2>
+          
           <BurritoChannelCreate />
-          <Link to= "/page1">page1</Link>
+          
           <button onClick={signOut}>Sign out</button>
         </main>
       )}
