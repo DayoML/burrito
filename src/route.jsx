@@ -1,53 +1,21 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Page1 from "./page1";
-import Page2 from "./page2";
-import { BurritoChannelCreate } from "./ui-components";
+import { Route, Routes } from 'react-router-dom';
+import About from './About';
+import Page1 from './Page1';
+import Page2 from './Page2';
+import { BurritoChannelCreate } from './ui-components';
 
 export default function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/create">
-           <BurritoChannelCreate/>
-          </Route>
-          <Route path="/page1">
-           <Page1/>
-          </Route>
-          <Route path="/page2">
-           <Page2/>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+	return (
+		<div>
+			{/* A <Switch> looks through its children <Route>s and
+          renders the first one that matches the current URL. */}
+			<Routes>
+				<Route path="/" element={<BurritoChannelCreate />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/page1" element={<Page1 />} />
+				<Route path="/page2" element={<Page2 />} />
+				<Route path="/create" element={<BurritoChannelCreate />} />
+			</Routes>
+		</div>
+	);
 }
-
